@@ -1,61 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
-    <link rel="stylesheet" href="Styles.css"> <!-- Optional: Link to your CSS file -->
-</head>
-<body>
-    <header>
-        <h1>Welcome To Juan-Pierre Carlson's Web Page</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <main>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>I am a skilled computer technician with expertise in troubleshooting and repairing hardware and software issues. My experience extends to creating custom networks tailored to the needs of small businesses and individual clients, as well as camera installations and repairs. I am deeply passionate about computers and IT, constantly seeking opportunities to enhance my skills and contribute to technological advancements.</p>
-        </section>
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
 
-        <section id="services">
-            <h2>My Services</h2>
-            <ul>
-                <li>Computer Hardware Diagnostics And Repairs</li>
-                <li>Software Installations/Repairs</li>
-                <li>Small Business And Private Network Diagnostics/Setup/Repairs</li>
-                <li>CCTV Installations And Repairs For Small Businesses And Homes</li>
-                
-            </ul>
-        </section>
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Fill out the form below to get in touch.</p>
-            <form action="submit.php" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
 
-    <footer>
-        <p>&copy; 2024 Your Website Name. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+nav ul {
+    list-style-type: none;
+}
 
-<form action="send_email.php" method="post">
-    <!-- Your form fields -->
-</form>
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styles */
+main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button[type="submit"] {
+    padding: 8px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
